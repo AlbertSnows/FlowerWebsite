@@ -1,0 +1,43 @@
+{
+  "name": "node-typescript-webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "ts-node-dev -r tsconfig-paths/register -P tsconfig.json --respawn --transpileOnly -- src/main.ts",
+    "lint": "tslint -c tslint.json --project tsconfig.json src/**/**.[tj]s",
+    "test": "mocha --reporter spec -r ts-node/register src/**/*.spec.ts",
+    "build": "webpack --config webpack.dev.js",
+    "build:prod": "webpack --config webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/project-dev-env/node-typescript-webpack.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/project-dev-env/node-typescript-webpack/issues"
+  },
+  "homepage": "https://github.com/project-dev-env/node-typescript-webpack#readme",
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^11.9.4",
+    "chai": "^4.2.0",
+    "clean-webpack-plugin": "^1.0.1",
+    "mocha": "^6.0.1",
+    "ts-loader": "^5.3.3",
+    "ts-node-dev": "^1.0.0-pre.32",
+    "tsconfig-paths": "^3.8.0",
+    "tsconfig-paths-webpack-plugin": "^3.2.0",
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.3",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "dotenv": "^6.2.0"
+  }
+}
