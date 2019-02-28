@@ -14,6 +14,27 @@ function generateCardHTML() {
               `; // href="${card.url}"
     }).join('');
   }
+
+function policyButton() {
+    console.log("in method"); 
+    document.getElementById("policy2").innerHTML = "Clicked";
+    document.getElementById("privacy-button").innerHTML = "Clicked";
+
+    // const x = document.getElementById('policy-div');
+    // const y = document.getElementById('thumbnails');
+    // if (x == null || y == null) {
+    //     console.log('Error! ID not found');
+    // } else {
+    //     if (x.style.display === 'none') {
+    //         x.style.display = 'block';
+    //         y.style.display = 'none';
+    //     } else {
+    //         x.style.display = 'none';
+    //         y.style.display = 'block';
+    //     }
+    // }
+}
+
 /** @function serveIndex
  * Serves an index page
  */
@@ -27,6 +48,7 @@ export function serveIndex(req, res) {
       <link rel="stylesheet" type="text/css" href="main.css">
       <title>My Website</title>
     </head>
+    
     <body class="background mexico">
       <header id="header">
           <div>
@@ -84,9 +106,14 @@ export function serveIndex(req, res) {
               </ul>
           </nav>
       </header>
-      <main id="thumbnails">
+      <main>
+        <div id="thumbnails">
             ${generateCardHTML()}
-      </main>
+        </div>
+        <div id="policy-div">
+            Policy Pool
+        </div>
+    </main>
       <footer class="footer">
           <div id="footer-content">
               <div id="footer-contact">
@@ -124,7 +151,12 @@ export function serveIndex(req, res) {
                               <ul>
                                   <li><a href="/about-us">About Us</a></li>
                                   <li><a href="/faq#Privacy Policy / Security">Safe Shopping</a></li>
-                                  <li><a href="/faq#Privacy Policy / Security">Privacy</a></li>
+                                  <script>
+                                    document.getElementById("privacy-button").addEventListener("click", policyButton);
+                                  </script>
+                                  <li><button id="privacy-button" onclick="policyButton()"> Privacy</button></li>
+                                  <li><input  id="privacy-input"  onclick="policyButton()" runat="server" type="button" value = "Button Text" >
+                                    </input></li>
                                   <li><a href="/about-us#Delivery Policy">Delivery</a></li>
                               </ul>
                           </li>

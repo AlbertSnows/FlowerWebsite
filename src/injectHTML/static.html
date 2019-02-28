@@ -2,9 +2,18 @@
 <html lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
     <title>My Website</title>
   </head>
+  <script>
+      document.getElementById("privacy-input").addEventListener("click", policyButton);
+      document.getElementById("privacy-button").addEventListener("click", policyButton);
+function policyButton() {
+    console.log("in method"); 
+    document.getElementById("privacy-input").innerHTML = "Clicked input";
+    document.getElementById("privacy-button").innerHTML = "Clicked button";
+}
+  </script>
   <body class="background mexico">
     <header id="header">
         <div>
@@ -19,9 +28,11 @@
                         <a href="#" target="_self" class="dropdown unselected">About</a>
                     </button>
                     <div class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
+                      <a href="#">About Us</a>
+                      <a href="#">Meet The Staff</a>
+                      <a href="#">Visit Our Store</a>
+                      <a href="#">Help</a>
+                      <a href="#">(800) 532-3409</a>
                     </div>
                 </li>
                 <li class="dropdown" style="float: right;">
@@ -29,9 +40,18 @@
                         <a href="#" target="_self" class="dropdown unselected">Sororities</a>
                     </button>
                     <div class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
+                      <a href="#">Gamma Phi Beta</a>
+                      <a href="#">Alpha Chi Omega</a>
+                      <a href="#">Alpha Delta Pi</a>
+                      <a href="#">Delta, Delta, Delta</a>
+                      <a href="#">Alpha Xi Delta</a>
+                      <a href="#">Chi Omega</a>
+                      <a href="#">Zeta Tau Alpha</a>
+                      <a href="#">Kappa Alpha Theta</a>
+                      <a href="#">Kappa Kappa Gamma</a>
+                      <a href="#">Kappa Delta</a>
+                      <a href="#">Pi Beta Phi</a>
+                      <a href="#">Sigma Kappa</a>
                     </div>
                 </li>
                 <li class="dropdown" style="float: right;">
@@ -51,9 +71,14 @@
             </ul>
         </nav>
     </header>
-    <main id="thumbnails">
+    <main>
+      <div id="thumbnails">
           ${generateCardHTML()}
-    </main>
+      </div>
+      <div id="policy-div">
+          Policy Pool
+      </div>
+  </main>
     <footer class="footer">
         <div id="footer-content">
             <div id="footer-contact">
@@ -91,7 +116,9 @@
                             <ul>
                                 <li><a href="/about-us">About Us</a></li>
                                 <li><a href="/faq#Privacy Policy / Security">Safe Shopping</a></li>
-                                <li><a href="/faq#Privacy Policy / Security">Privacy</a></li>
+                                <li><button id="privacy-button" onclick="policyButton()">Privacy</button></li>
+                                <li><input  id="privacy-input"  onclick="policyButton()" type="button" value = "Input Text" >
+                                  </input></li>
                                 <li><a href="/about-us#Delivery Policy">Delivery</a></li>
                             </ul>
                         </li>

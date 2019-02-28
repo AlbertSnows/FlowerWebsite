@@ -18,6 +18,10 @@
   font-size: 80px;
   color: rgb(209, 206, 150);
 }
+#policy-div{
+  width: 100%;
+  display: block;
+}
 #thumbnails{
   display: grid; 
   grid-template-columns: repeat(4, 1fr);
