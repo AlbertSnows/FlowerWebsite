@@ -66,6 +66,10 @@ module.exports = {
             {
                 from: './src/public',
                 to: './public'
+            },
+            {
+                from: './src/js',
+                to: './js'
             }
         ])
     ],

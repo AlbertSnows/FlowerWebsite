@@ -18,11 +18,23 @@
   font-size: 80px;
   color: rgb(209, 206, 150);
 }
-#policy-div{
-  width: 100%;
-  display: block;
+#privacy-div{
+  display: none;
 }
-#thumbnails{
+#privacy-button{
+  border: none;
+  background-color: transparent;
+  color: rgb(209, 206, 150);
+  text-align: left;
+  display: flex;
+  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid transparent;
+  font-family: 'October Regular';
+  font-size: 18px;
+}
+#home-page-div{
   display: grid; 
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: auto;

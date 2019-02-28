@@ -45,6 +45,22 @@ function serveStylesheet(filename: string, req: http.IncomingMessage, res: http.
     res.end(data); // serve the file
   });
 }
+/*serve JS*/
+function serveJS(filename: string, req: http.IncomingMessage, res: http.ServerResponse): void {
+  const jsPath = join(__dirname, 'js', filename);
+  fs.readFile(jsPath, function(err, data) {
+    if (err) {
+      console.error(err); // write our error to the log
+      res.statusCode = 500;
+      res.statusMessage = 'Server Error';
+      res.end('Server Error'); // serve the error status
+      return; // stop executing the function
+    }
+    res.setHeader('Content-Type', 'application/javascript'); // set our content type
+    res.end(data); // serve the file
+  });
+}
+
 
 /* Create a new HTTP server */
 const server = http.createServer(function(req: http.IncomingMessage , res: http.ServerResponse) {
@@ -55,6 +71,9 @@ const server = http.createServer(function(req: http.IncomingMessage , res: http.
       break;
     case '/main.css':
       serveStylesheet('main.css', req, res);
+      break;
+    case '/client.js':
+      serveJS('client.js', req, res);
       break;
     default:
       serveImage(req.url || '', req, res);

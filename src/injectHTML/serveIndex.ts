@@ -16,23 +16,11 @@ function generateCardHTML() {
   }
 
 function policyButton() {
-    console.log("in method"); 
-    document.getElementById("policy2").innerHTML = "Clicked";
-    document.getElementById("privacy-button").innerHTML = "Clicked";
+    // console.log('in method');
+    // document.getElementById('policy2').innerHTML = 'Clicked';
+    // document.getElementById('privacy-button').innerHTML = 'Clicked';
 
-    // const x = document.getElementById('policy-div');
-    // const y = document.getElementById('thumbnails');
-    // if (x == null || y == null) {
-    //     console.log('Error! ID not found');
-    // } else {
-    //     if (x.style.display === 'none') {
-    //         x.style.display = 'block';
-    //         y.style.display = 'none';
-    //     } else {
-    //         x.style.display = 'none';
-    //         y.style.display = 'block';
-    //     }
-    // }
+
 }
 
 /** @function serveIndex
@@ -48,7 +36,6 @@ export function serveIndex(req, res) {
       <link rel="stylesheet" type="text/css" href="main.css">
       <title>My Website</title>
     </head>
-    
     <body class="background mexico">
       <header id="header">
           <div>
@@ -97,7 +84,7 @@ export function serveIndex(req, res) {
                           <a href="#">New Baby!</a>
                           <a href="#">Daily Expressions</a>
                           <a href="#">Garden Paradise</a>
-                          <a href="#">Wedding</a>
+                          <a target="__self" href="https://www.pinterest.com/kistnersflowers/">Wedding</a>
                           <a href="#">Sympathy</a>
                           <a href="#">Birthday</a>
                           <a href="#">Shop All Occasions</a>
@@ -107,13 +94,144 @@ export function serveIndex(req, res) {
           </nav>
       </header>
       <main>
-        <div id="thumbnails">
+        <div id="home-page-div">
             ${generateCardHTML()}
         </div>
-        <div id="policy-div">
-            Policy Pool
+        <div id="privacy-div">
+        <!doctype html>
+        <html lang="en">
+          <head>
+            <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+            <link rel="stylesheet" type="text/css" href="main.css">
+            <title>My Website</title>
+          </head>
+            <body class="background mexico">
+                <p>
+                    <h1>
+                        Substitution Policy
+                    </h1>
+                    <p>
+                        Occasionally, substitutions may be necessary to create your bouquet due to the
+                        availability of certain flowers in various parts of the country. Care is taken to
+                         maintain the style, theme and color scheme of the arrangement, using flowers of equal
+                         value. Additionally, the substitution of certain keepsake items may be necessary due to
+                          increased demand, especially during major holidays. In single-flower arrangements,
+                          such as an all rose bouquet, or orchids, we will make every attempt to match the
+                          flower type, but may substitute with another color.
+                    </p>
+                    <h1>
+                        Privacy Policy
+                    </h1>
+                    <p>
+                        This privacy statement has been created in order to demonstrate our firm commitment to protecting customer privacy.
+                    </p>
+                    <h2>
+                        Information We Collect
+                    </h2>
+                    <p>
+                        If you open an account on our site or make a purchase, we need your contact information
+                         including your name, e-mail address and mailing address to complete your transaction.
+                    </p>
+                    <p>
+                        When you visit our website, we also collect some basic information that does not
+                        identify individual users. We use this information to determine our users demographics
+                         and interests, so that we can better understand and serve our users.
+                    </p>
+                    <h2>
+                        "Cookies"
+                    </h2>
+                    <p>
+                        Cookies are small files which store certain information about your activity on the
+                        website and are stored on your computers hard drive. Our cookies do not contain any
+                         personally identifying information. We use cookies to let us know that you are a prior
+                          customer, so that you dont have to reenter information you gave us on your prior
+                           visits. Most web browsers automatically accept cookies, but most allow you to
+                            instruct your browser to prevent the use of cookies. However, if you disable
+                             cookies, you will not be able to use certain features of this website.
+                    </p>
+                    <p>
+                        Our Use and Disclosure of Your Information
+                    </p>
+                    <p>
+                        When opening an account or making a purchase, you have an opportunity to opt-in or
+                         opt-out from receiving emails from us. If you opt-in to receive information from us,
+                          we may use your purchase history, contact information and other registration
+                           information to provide you with more relevant information and email content. We
+                            may send emails to our users regarding changes in our services or other information
+                             we believe will be of interest to our users. If you prefer not to receive these
+                              emails, you can send us an email with the subject line no emails or reply to our
+                               email with the subject line no emails.
+                    </p>
+                    <p>
+                        If you send us personal correspondence, such as emails or letters, or if other users or
+                         third parties send us correspondence about your activities on our site, we may collect
+                          such information. We may use that information and other information that we obtain
+                           from your use of our site to resolve disputes, troubleshoot problems and enforce our agreement for Terms of Use.
+                    </p>
+                    <p>
+                        We may share aggregate statistics about our sales, traffic patterns and related site
+                         information with other businesses, but these statistics will include no personally
+                          identifying information.
+                    </p>
+                    <p>
+                        We may share your information with Teleflora and other reputable vendors for the purpose
+                         of sending out special offers via email and/ or in connection with the services
+                          provided by our site such as the delivery of flowers. Your information will not be
+                           shared for any other purpose and will be kept secured.
+                    </p>
+                    <p>
+                        We cannot ensure that all of your private communications and other personally
+                         identifiable information will never be disclosed in ways not otherwise described in
+                          this Privacy Statement. For example, we may be required to disclose information to
+                           the government or third parties under certain circumstances, or third parties may
+                            unlawfully intercept or access transmissions or private communications. We can (and
+                                 you authorize us to) disclose any information about you to law enforcement or
+                                  other government officials as we, in our sole discretion, believe necessary
+                                   or appropriate in connection with an investigation of fraud, intellectual
+                                    property infringements, or other activity that may be illegal or may expose us to legal liability.
+                    </p>
+                    <h2>
+                        Security
+                    </h2>
+                    <p>
+                        This site has security measures in place to protect the loss, misuse and alteration of
+                         the information under our control.
+                    </p>
+                    <p>
+                        All user credit card information is securely communicated using secure socket layer
+                         (SSL) software, which is the industry standard and among the best software available
+                          for secure commerce transactions.
+                    </p>
+                    <p>
+                        All user information stored on our server is stored in an encrypted format.
+                         Notwithstanding these efforts, we caution you that perfect security does not exist on the Internet.
+                    </p>
+                    <h2>
+                        Linked Sites
+                    </h2>
+                    <p>
+                        If this site contains any links to other websites, we are not responsible for the
+                         privacy practices or the content of such websites.
+                    </p>
+                    <h2>
+                        Changes to Privacy Statement; Consent
+                    </h2>
+                        <p>
+                            We may update this Privacy Statement from time to time. You should check this page
+                             periodically for changes. By using our site, you consent to the collection and use
+                              of your information by us as described in this Privacy Statement.
+                        </p>
+                    <h2>
+                        Questions and Comments
+                    </h2>
+                    <p>
+                        We welcome your questions and comments about this Privacy Statement.
+                    </p>
+                </p>
+            </body>
+        </html>
         </div>
-    </main>
+      </main>
       <footer class="footer">
           <div id="footer-content">
               <div id="footer-contact">
@@ -151,12 +269,8 @@ export function serveIndex(req, res) {
                               <ul>
                                   <li><a href="/about-us">About Us</a></li>
                                   <li><a href="/faq#Privacy Policy / Security">Safe Shopping</a></li>
-                                  <script>
-                                    document.getElementById("privacy-button").addEventListener("click", policyButton);
-                                  </script>
-                                  <li><button id="privacy-button" onclick="policyButton()"> Privacy</button></li>
-                                  <li><input  id="privacy-input"  onclick="policyButton()" runat="server" type="button" value = "Button Text" >
-                                    </input></li>
+                                  <li><button id="privacy-button"><a href="#">Privacy</a></button></li>
+                                  <!--<li><input  id="privacy-input" type="button" value = "Button Text" ></input></li>-->
                                   <li><a href="/about-us#Delivery Policy">Delivery</a></li>
                               </ul>
                           </li>
@@ -172,6 +286,7 @@ export function serveIndex(req, res) {
               </div>
           </div>
       </footer>
+      <script type="application/javascript" src="client.js"></script>
       </body>
   </html>
     `);
