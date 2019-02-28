@@ -1,4 +1,5 @@
 import featured from './recipes';
+import h from './h';
 /** @function generateCardHTML
  * Generates a html string represeting the cards
  * @returns {string[]}
@@ -140,6 +141,7 @@ export function serveIndex(req, res) {
               </div>
           </div>
       </footer>
+      ${h()}
       </body>
   </html>
     `);
