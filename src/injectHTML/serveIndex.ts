@@ -41,9 +41,11 @@ export function serveIndex(req, res) {
                           <a href="#" target="_self" class="dropdown unselected">About</a>
                       </button>
                       <div class="dropdown-content">
-                          <a href="#">Link 1</a>
-                          <a href="#">Link 2</a>
-                          <a href="#">Link 3</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Meet The Staff</a>
+                        <a href="#">Visit Our Store</a>
+                        <a href="#">Help</a>
+                        <a href="#">(800) 532-3409</a>
                       </div>
                   </li>
                   <li class="dropdown" style="float: right;">
@@ -51,9 +53,18 @@ export function serveIndex(req, res) {
                           <a href="#" target="_self" class="dropdown unselected">Sororities</a>
                       </button>
                       <div class="dropdown-content">
-                          <a href="#">Link 1</a>
-                          <a href="#">Link 2</a>
-                          <a href="#">Link 3</a>
+                        <a href="#">Gamma Phi Beta</a>
+                        <a href="#">Alpha Chi Omega</a>
+                        <a href="#">Alpha Delta Pi</a>
+                        <a href="#">Delta, Delta, Delta</a>
+                        <a href="#">Alpha Xi Delta</a>
+                        <a href="#">Chi Omega</a>
+                        <a href="#">Zeta Tau Alpha</a>
+                        <a href="#">Kappa Alpha Theta</a>
+                        <a href="#">Kappa Kappa Gamma</a>
+                        <a href="#">Kappa Delta</a>
+                        <a href="#">Pi Beta Phi</a>
+                        <a href="#">Sigma Kappa</a>
                       </div>
                   </li>
                   <li class="dropdown" style="float: right;">
