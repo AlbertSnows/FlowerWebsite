@@ -1,6 +1,7 @@
 const path = require('path');
 // plugins
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 // externals
 const nodeExternals = require('webpack-node-externals');
@@ -8,9 +9,13 @@ const nodeExternals = require('webpack-node-externals');
 module.exports = {
     mode: 'production',
     entry: [
-        './src/main.ts'
+        './src/entrance.ts'
     ],
     target: 'node',
+    node: {
+        __dirname: false,
+        __filename: false
+    },
     output: {
         path: path.join(__dirname, 'dist'),
         filename: 'main.js'
@@ -48,7 +53,21 @@ module.exports = {
             exclude: [
                 /node_modules/
             ]
-        })
+        }),
+        new CopyWebpackPlugin([
+            { 
+                from: './src/css',
+                to: './css'
+            },
+            {
+                from: './src/data',
+                to: './data'
+            },
+            {
+                from: './src/public',
+                to: './public'
+            }
+        ])
     ],
     externals: [
         nodeExternals()

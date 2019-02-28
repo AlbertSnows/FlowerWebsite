@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/main.js",
   "scripts": {
-    "start": "ts-node-dev -r tsconfig-paths/register -P tsconfig.json --respawn --transpileOnly -- src/main.ts",
+    "start": "ts-node-dev -r tsconfig-paths/register -P tsconfig.json --respawn --transpileOnly -- src/entrance.ts",
     "lint": "tslint -c tslint.json --project tsconfig.json src/**/**.[tj]s",
     "test": "mocha --reporter spec -r ts-node/register src/**/*.spec.ts",
     "build": "webpack --config webpack.dev.js",
@@ -12,20 +12,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/project-dev-env/node-typescript-webpack.git"
+    "url": "git+https://github.com/AlbertSnows/FlowerWebsite.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/project-dev-env/node-typescript-webpack/issues"
+    "url": "https://github.com/AlbertSnows/FlowerWebsite/issues"
   },
-  "homepage": "https://github.com/project-dev-env/node-typescript-webpack#readme",
+  "homepage": "https://github.com/AlbertSnows/FlowerWebsite#readme",
   "devDependencies": {
     "@types/chai": "^4.1.7",
     "@types/mocha": "^5.2.6",
     "@types/node": "^11.9.4",
     "chai": "^4.2.0",
     "clean-webpack-plugin": "^1.0.1",
+    "copy-webpack-plugin": "^5.0.0",
     "mocha": "^6.0.1",
     "ts-loader": "^5.3.3",
     "ts-node-dev": "^1.0.0-pre.32",
@@ -37,7 +38,5 @@
     "webpack-cli": "^3.2.3",
     "webpack-node-externals": "^1.7.2"
   },
-  "dependencies": {
-    "dotenv": "^6.2.0"
-  }
+  "dependencies": {}
 }
