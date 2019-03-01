@@ -85,7 +85,7 @@ export function serveIndex(req, res) {
                           <a href="#">Daily Expressions</a>
                           <a href="#">Garden Paradise</a>
                           <a target="__self" href="https://www.pinterest.com/kistnersflowers/">Wedding</a>
-                          <a href="#">Sympathy</a>
+                          <a target="__self" href="https://www.pinterest.com/kistnersflowers/local-altars/">Funeral</a>
                           <a href="#">Birthday</a>
                           <a href="#">Shop All Occasions</a>
                       </div>
